@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function minArray(arr) {
+            if (arr.length == 0)
+                return -1;
+            let min = arr[0];
+
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] < min) {
+                    min = arr[i];
+                }
+            }
+            return min;
+        }
+        let arr1 = [3, 5, 1, 8, -3, 7, 8];
+        document.write('Min of array1 is : ' + minArray(arr1)+'<br>');
+        let arr2 = [7, 12, 6, 9, 20, 56, 89];
+        document.write('Min of array2 is : ' + minArray(arr2)+'<br>');
+        let arr3 = [];
+        document.write('Min of array 3is : ' + minArray(arr3)+'<br>');
+        let arr4 = [0, 0, 0, 0, 0, 0];
+        document.write('Min of array4 is : ' + minArray(arr4)+'<br>');
+    </script>
+</body>
+
+</html>
